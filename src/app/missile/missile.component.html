@@ -1,5 +1,8 @@
-<div>
-  <h3>{{missile.name}}</h3>
-  <p>country: <b>{{missile.country}}</b></p>
-  <p>active: <b>{{missile.active}}</b></p>
+<div class="card {{missile.active ? 'active' : 'inactive' }}">
+  <div>
+    <h3>{{missile.name}}</h3>
+    <p>country: <b>{{missile.country}}</b></p>
+    <p>active: <b>{{missile.active}}</b></p>
+  </div>
+  <img src="https://picsum.photos/id/967/100/100" />
 </div>

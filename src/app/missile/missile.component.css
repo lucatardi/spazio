@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.active {
+  background-color: darkgreen;
+  color: white;
+}
+
+.inactive {
+  background-color: lightgray;
+  color: black;
+}
