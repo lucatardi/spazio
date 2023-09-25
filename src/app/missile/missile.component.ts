@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Missile } from './missile';
 
 @Component({
@@ -7,9 +7,5 @@ import { Missile } from './missile';
   styleUrls: ['./missile.component.css']
 })
 export class MissileComponent {
-  missile: Missile = {
-    name: 'Vega',
-    country: 'Italy',
-    active: true
-  };
+  @Input() missile: Missile = { name: '', country: '', active: false}; 
 }
