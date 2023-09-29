@@ -23,5 +23,15 @@ export class ListaMissiliComponent {
       country: 'India',
       active: false
     },
+    {
+      name: 'Falcon 9',
+      country: 'United States',
+      active: true
+    },
+    {
+      name: 'Ariane 5',
+      country: 'France',
+      active: true
+    },
    ]
 }

@@ -1,4 +1,4 @@
-<div class="card {{missile.active ? 'active' : 'inactive' }}">
+<div *ngIf="missile" class="card {{missile.active ? 'active' : 'inactive' }}">
   <div>
     <h3>{{missile.name}}</h3>
     <p>country: <b>{{missile.country}}</b></p>

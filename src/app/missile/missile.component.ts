@@ -7,5 +7,5 @@ import { Missile } from './missile';
   styleUrls: ['./missile.component.css']
 })
 export class MissileComponent {
-  @Input() missile: Missile = { name: '', country: '', active: false}; 
+  @Input() missile?: Missile; 
 }
