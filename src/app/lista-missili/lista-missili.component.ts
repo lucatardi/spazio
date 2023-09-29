@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Missile } from '../missile/missile';
+import { MissiliService } from '../missili.service';
 
 @Component({
   selector: 'lista-missili',
@@ -7,31 +8,11 @@ import { Missile } from '../missile/missile';
   styleUrls: ['./lista-missili.component.css']
 })
 export class ListaMissiliComponent {
-   missili: Missile[] = [
-    {
-     name: 'Vega',
-     country: 'Italy',
-     active: false
-    },
-    {
-      name: 'Tomahawk',
-      country: 'United States',
-      active: true
-    },
-    {
-      name: 'BrahMos',
-      country: 'India',
-      active: false
-    },
-    {
-      name: 'Falcon 9',
-      country: 'United States',
-      active: true
-    },
-    {
-      name: 'Ariane 5',
-      country: 'France',
-      active: true
-    },
-   ]
+  constructor(private missiliService: MissiliService) {}
+  
+  missili: Missile[] = [];
+
+  ngOnInit(): void {
+    this.missili = this.missiliService.getMissili();
+  }
 }
