@@ -1,0 +1,10 @@
+<div *ngIf="missile">
+  <img src="https://picsum.photos/id/967/500/500" />
+  <div>
+    <h3>{{missile.name}}</h3>
+    <p *ngFor="let item of missile | keyvalue">
+      {{item.key}}: {{item.value}}
+    </p>
+  </div>
+</div>
+

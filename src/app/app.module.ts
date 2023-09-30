@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MissileComponent } from './missile/missile.component';
 import { ListaMissiliComponent } from './lista-missili/lista-missili.component';
+import { MissileInfoComponent } from './missile-info/missile-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MissileComponent,
-    ListaMissiliComponent
+    ListaMissiliComponent,
+    MissileInfoComponent
   ],
   imports: [
     BrowserModule,
