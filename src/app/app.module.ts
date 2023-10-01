@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { MissileComponent } from './missile/missile.component';
 import { ListaMissiliComponent } from './lista-missili/lista-missili.component';
 import { MissileInfoComponent } from './missile-info/missile-info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { MissileInfoComponent } from './missile-info/missile-info.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

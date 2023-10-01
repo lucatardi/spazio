@@ -1,8 +1,15 @@
-<div *ngIf="missile" class="card {{missile.active ? 'active' : 'inactive' }}">
-  <div>
-    <h3>{{missile.name}}</h3>
-    <p>country: <b>{{missile.country}}</b></p>
-    <p>active: <b>{{missile.active}}</b></p>
-  </div>
-  <img src="https://picsum.photos/id/967/100/100" />
-</div>
+<mat-card *ngIf="missile">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{missile.name}}</mat-card-title>
+      <mat-card-subtitle>{{missile.country}}</mat-card-subtitle>
+      <img src="https://picsum.photos/id/967/100/100" >
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{missile.active ? '✅ Attivo' : '❌ Disattivo'}}
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button routerLink="/missile/{{missile.id}}">Dettagli</button>
+  </mat-card-actions>
+</mat-card>
