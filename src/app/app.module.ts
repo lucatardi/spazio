@@ -7,6 +7,7 @@ import { MissileComponent } from './missile/missile.component';
 import { ListaMissiliComponent } from './lista-missili/lista-missili.component';
 import { MissileInfoComponent } from './missile-info/missile-info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
@@ -24,7 +25,8 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,12 +13,12 @@ export class MissileInfoComponent {
   
   missile?: Missile;
 
-  getMissile(): Missile | undefined {
+  getMissile() {
     const id = this.route.snapshot.paramMap.get('id');
-    return this.missiliService.getMissili().find(missile => missile.id === id)
+    this.missiliService.getMissili().subscribe(missili =>  this.missile = missili.find(missile => missile.id === id))
   }
 
   ngOnInit(): void {
-    this.missile = this.getMissile();
+    this.getMissile();
   }
 }

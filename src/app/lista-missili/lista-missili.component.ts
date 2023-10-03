@@ -13,6 +13,6 @@ export class ListaMissiliComponent {
   missili: Missile[] = [];
 
   ngOnInit(): void {
-    this.missili = this.missiliService.getMissili();
+    this.missiliService.getMissili().subscribe(missili => this.missili = missili);
   }
 }
