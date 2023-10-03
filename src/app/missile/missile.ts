@@ -5,4 +5,5 @@ export type Missile = {
   id: string;
   height?: number;
   first_flight: string;
+  flickr_images: string;
 }
